@@ -1,0 +1,664 @@
+{
+	"info": {
+		"_postman_id": "169d8004-68a0-4b22-8891-3e934289c130",
+		"name": "final-project-golang-hacktiv8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21939244",
+		"_collection_link": "https://www.postman.com/septyancandra/workspace/bootcamp/collection/21939244-169d8004-68a0-4b22-8891-3e934289c130?action=share&source=collection_link&creator=21939244"
+	},
+	"item": [
+		{
+			"name": "Project-Akhir",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "septyancandra0709",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "septyancandra0709@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "age",
+											"value": "25",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8085/users/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"users",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "septyancandra27@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8085/users/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Social Media",
+					"item": [
+						{
+							"name": "Add Social Media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "septyan candra",
+											"type": "text"
+										},
+										{
+											"key": "social_media_url",
+											"value": "https://www.instagram.com/septyancandra/",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8085/social-media/add",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"social-media",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Social Meida",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8085/social-media/",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"social-media",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Social Media By SocialMediaId",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8085/social-media/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"social-media",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Social Media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Pyan",
+											"type": "text"
+										},
+										{
+											"key": "social_media_url",
+											"value": "https://www.instagram.com/septyancandra/",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8085/social-media/update/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"social-media",
+										"update",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Social Media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8085/social-media/delete/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"social-media",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Photo",
+					"item": [
+						{
+							"name": "Add Photo",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "Someday 2",
+											"type": "text"
+										},
+										{
+											"key": "caption",
+											"value": "Pray Until Something Happend",
+											"type": "text"
+										},
+										{
+											"key": "photo_url",
+											"value": "https://www.instagram.com/septyancandra/",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8085/photos/add",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"photos",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Photos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:8085/photos/",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"photos",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Photo By Photo Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:8085/photos/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"photos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Updated Photos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "Someday in Ciloto",
+											"type": "text"
+										},
+										{
+											"key": "caption",
+											"value": "Pray Until Something Happend (PUSH)",
+											"type": "text"
+										},
+										{
+											"key": "photo_url",
+											"value": "https://www.instagram.com/septyancandra/suka-suka",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8085/photos/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"photos",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deleted Photo",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8085/photos/delete/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"photos",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Comment",
+					"item": [
+						{
+							"name": "Add Comment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "photo_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "congrats",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8085/comments/add",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"comments",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Comments",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8085/comments/",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"comments",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Comments By CommentId",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8085/comments/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"comments",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Comment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "message",
+											"value": "hahahaa",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8085/comments/update/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"comments",
+										"update",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Comment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcHR5YW5jYW5kcmEyN0BnbWFpbC5jb20iLCJpZCI6MX0.ziI_XwTf18xb7IfgxnQDKEE2aEjLxpzRJQEWPUJSmHI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8085/comments/delete/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"comments",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
