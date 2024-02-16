@@ -79,3 +79,5 @@ DeleteSocialMedia [DELETE]: Menghapus media sosial.
 ```
 
 Dengan menyediakan endpoint-endpoint ini, MyGram memungkinkan pengguna untuk melakukan berbagai operasi CRUD serta berinteraksi dengan data foto, komentar, pengguna, dan media sosial dengan mudah dan aman
+
+#### Detail tutorial :  https://github.com/septyancandra/golang-final-project-hacktiv8/tree/main/MyGram
